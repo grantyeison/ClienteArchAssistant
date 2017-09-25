@@ -1,0 +1,824 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://Servicios/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://Servicios/">
+
+<xs:element name="BuscarAtributo" type="tns:BuscarAtributo"/>
+
+<xs:element name="BuscarAtributoResponse" type="tns:BuscarAtributoResponse"/>
+
+<xs:element name="BuscarEscenario" type="tns:BuscarEscenario"/>
+
+<xs:element name="BuscarEscenarioResponse" type="tns:BuscarEscenarioResponse"/>
+
+<xs:element name="BuscarInterface" type="tns:BuscarInterface"/>
+
+<xs:element name="BuscarInterfaceResponse" type="tns:BuscarInterfaceResponse"/>
+
+<xs:element name="BuscarModulo" type="tns:BuscarModulo"/>
+
+<xs:element name="BuscarModuloEnDescomposicion" type="tns:BuscarModuloEnDescomposicion"/>
+
+<xs:element name="BuscarModuloEnDescomposicionResponse" type="tns:BuscarModuloEnDescomposicionResponse"/>
+
+<xs:element name="BuscarModuloResponse" type="tns:BuscarModuloResponse"/>
+
+<xs:element name="BuscarProyecto" type="tns:BuscarProyecto"/>
+
+<xs:element name="BuscarProyectoResponse" type="tns:BuscarProyectoResponse"/>
+
+<xs:element name="BuscarTactica" type="tns:BuscarTactica"/>
+
+<xs:element name="BuscarTacticaResponse" type="tns:BuscarTacticaResponse"/>
+
+<xs:element name="BuscarUsuario" type="tns:BuscarUsuario"/>
+
+<xs:element name="BuscarUsuarioResponse" type="tns:BuscarUsuarioResponse"/>
+
+<xs:element name="CrearAtributo" type="tns:CrearAtributo"/>
+
+<xs:element name="CrearEscenario" type="tns:CrearEscenario"/>
+
+<xs:element name="CrearInterface" type="tns:CrearInterface"/>
+
+<xs:element name="CrearModulo" type="tns:CrearModulo"/>
+
+<xs:element name="CrearPatron" type="tns:CrearPatron"/>
+
+<xs:element name="CrearProyecto" type="tns:CrearProyecto"/>
+
+<xs:element name="CrearResponsabilidad" type="tns:CrearResponsabilidad"/>
+
+<xs:element name="CrearTactica" type="tns:CrearTactica"/>
+
+<xs:element name="CrearUsuarios" type="tns:CrearUsuarios"/>
+
+<xs:element name="EliminarAtributo" type="tns:EliminarAtributo"/>
+
+<xs:element name="EliminarEscenario" type="tns:EliminarEscenario"/>
+
+<xs:element name="EliminarInterface" type="tns:EliminarInterface"/>
+
+<xs:element name="EliminarModulo" type="tns:EliminarModulo"/>
+
+<xs:element name="EliminarPatron" type="tns:EliminarPatron"/>
+
+<xs:element name="EliminarProyecto" type="tns:EliminarProyecto"/>
+
+<xs:element name="EliminarProyectoResponse" type="tns:EliminarProyectoResponse"/>
+
+<xs:element name="EliminarResponsabilidad" type="tns:EliminarResponsabilidad"/>
+
+<xs:element name="EliminarTactica" type="tns:EliminarTactica"/>
+
+<xs:element name="EliminarUsuario" type="tns:EliminarUsuario"/>
+
+<xs:element name="GuardarRationaleAdd" type="tns:GuardarRationaleAdd"/>
+
+<xs:element name="GuardarRationaleQaw" type="tns:GuardarRationaleQaw"/>
+
+<xs:element name="ListarAtributos" type="tns:ListarAtributos"/>
+
+<xs:element name="ListarAtributosResponse" type="tns:ListarAtributosResponse"/>
+
+<xs:element name="ListarEscenario" type="tns:ListarEscenario"/>
+
+<xs:element name="ListarEscenarioResponse" type="tns:ListarEscenarioResponse"/>
+
+<xs:element name="ListarInterfaces" type="tns:ListarInterfaces"/>
+
+<xs:element name="ListarInterfacesResponse" type="tns:ListarInterfacesResponse"/>
+
+<xs:element name="ListarModulo" type="tns:ListarModulo"/>
+
+<xs:element name="ListarModuloResponse" type="tns:ListarModuloResponse"/>
+
+<xs:element name="ListarModulos" type="tns:ListarModulos"/>
+
+<xs:element name="ListarModulosResponse" type="tns:ListarModulosResponse"/>
+
+<xs:element name="ListarPatronPorTactica" type="tns:ListarPatronPorTactica"/>
+
+<xs:element name="ListarPatronPorTacticaResponse" type="tns:ListarPatronPorTacticaResponse"/>
+
+<xs:element name="ListarPatrones" type="tns:ListarPatrones"/>
+
+<xs:element name="ListarPatronesResponse" type="tns:ListarPatronesResponse"/>
+
+<xs:element name="ListarProyectos" type="tns:ListarProyectos"/>
+
+<xs:element name="ListarProyectosResponse" type="tns:ListarProyectosResponse"/>
+
+<xs:element name="ListarResponsabilidad" type="tns:ListarResponsabilidad"/>
+
+<xs:element name="ListarResponsabilidadResponse" type="tns:ListarResponsabilidadResponse"/>
+
+<xs:element name="ListarResponsabilidades" type="tns:ListarResponsabilidades"/>
+
+<xs:element name="ListarResponsabilidadesResponse" type="tns:ListarResponsabilidadesResponse"/>
+
+<xs:element name="ListarTactica" type="tns:ListarTactica"/>
+
+<xs:element name="ListarTacticaPorAtributoDeCalidad" type="tns:ListarTacticaPorAtributoDeCalidad"/>
+
+<xs:element name="ListarTacticaPorAtributoDeCalidadResponse" type="tns:ListarTacticaPorAtributoDeCalidadResponse"/>
+
+<xs:element name="ListarTacticaResponse" type="tns:ListarTacticaResponse"/>
+
+<xs:element name="ListarTacticasPorPatron" type="tns:ListarTacticasPorPatron"/>
+
+<xs:element name="ListarTacticasPorPatronResponse" type="tns:ListarTacticasPorPatronResponse"/>
+
+<xs:element name="ListarUsuarios" type="tns:ListarUsuarios"/>
+
+<xs:element name="ListarUsuariosResponse" type="tns:ListarUsuariosResponse"/>
+
+<xs:element name="ModificarAtributo" type="tns:ModificarAtributo"/>
+
+<xs:element name="ModificarEscenario" type="tns:ModificarEscenario"/>
+
+<xs:element name="ModificarInterface" type="tns:ModificarInterface"/>
+
+<xs:element name="ModificarModulo" type="tns:ModificarModulo"/>
+
+<xs:element name="ModificarPatron" type="tns:ModificarPatron"/>
+
+<xs:element name="ModificarProyecto" type="tns:ModificarProyecto"/>
+
+<xs:element name="ModificarResponsabilidad" type="tns:ModificarResponsabilidad"/>
+
+<xs:element name="ModificarTactica" type="tns:ModificarTactica"/>
+
+<xs:element name="ModificarUsuario" type="tns:ModificarUsuario"/>
+
+<xs:element name="ObtenerDriverArquitectonicos" type="tns:ObtenerDriverArquitectonicos"/>
+
+<xs:element name="ObtenerDriverArquitectonicosResponse" type="tns:ObtenerDriverArquitectonicosResponse"/>
+
+<xs:element name="ObtenerRationaleAdd" type="tns:ObtenerRationaleAdd"/>
+
+<xs:element name="ObtenerRationaleAddResponse" type="tns:ObtenerRationaleAddResponse"/>
+
+<xs:element name="ObtenerRationaleQAW" type="tns:ObtenerRationaleQAW"/>
+
+<xs:element name="ObtenerRationaleQAWResponse" type="tns:ObtenerRationaleQAWResponse"/>
+
+<xs:element name="adicionarProyectoUsuario" type="tns:adicionarProyectoUsuario"/>
+
+<xs:element name="atributocalidad" type="tns:atributocalidad"/>
+
+<xs:element name="buscarPatron" type="tns:buscarPatron"/>
+
+<xs:element name="buscarPatronResponse" type="tns:buscarPatronResponse"/>
+
+<xs:element name="escenario" type="tns:escenario"/>
+
+<xs:element name="hello" type="tns:hello"/>
+
+<xs:element name="helloResponse" type="tns:helloResponse"/>
+
+<xs:element name="iniciarSesion" type="tns:iniciarSesion"/>
+
+<xs:element name="iniciarSesionResponse" type="tns:iniciarSesionResponse"/>
+
+<xs:element name="interface" type="tns:interface"/>
+
+<xs:element name="modulo" type="tns:modulo"/>
+
+<xs:element name="patron" type="tns:patron"/>
+
+<xs:element name="proyecto" type="tns:proyecto"/>
+
+<xs:element name="rationaleadd" type="tns:rationaleadd"/>
+
+<xs:element name="rationaleqaw" type="tns:rationaleqaw"/>
+
+<xs:element name="responsabilidad" type="tns:responsabilidad"/>
+
+<xs:element name="tactica" type="tns:tactica"/>
+
+<xs:element name="usuario" type="tns:usuario"/>
+
+<xs:complexType name="buscarPatron">
+<xs:sequence>
+<xs:element name="parameter" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarPatronResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:patron" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="patron">
+<xs:sequence>
+<xs:element name="patDescripcion" type="xs:string" minOccurs="0"/>
+<xs:element name="patID" type="xs:int" minOccurs="0"/>
+<xs:element name="patNombre" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ListarUsuarios">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="ListarUsuariosResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:usuario" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="usuario">
+<xs:sequence>
+<xs:element name="idUsuario" type="xs:int" minOccurs="0"/>
+<xs:element name="usuNombre" type="xs:string" minOccurs="0"/>
+<xs:element name="usuPasword" type="xs:string" minOccurs="0"/>
+<xs:element name="usuUsuario" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="CrearInterface">
+<xs:sequence>
+<xs:element name="parameter" type="tns:interface" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="interface">
+<xs:sequence>
+<xs:element name="intDescripcion" type="xs:string" minOccurs="0"/>
+<xs:element name="intId" type="xs:int" minOccurs="0"/>
+<xs:element name="intNombre" type="xs:string" minOccurs="0"/>
+<xs:element name="intTipo" type="xs:string" minOccurs="0"/>
+<xs:element name="tblModuloModId" type="tns:modulo" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="modulo">
+<xs:sequence>
+<xs:element name="modDescripcion" type="xs:string" minOccurs="0"/>
+<xs:element name="modFinal" type="xs:string" minOccurs="0"/>
+<xs:element name="modId" type="xs:int" minOccurs="0"/>
+<xs:element name="modNombre" type="xs:string" minOccurs="0"/>
+<xs:element name="tblModuloModId" type="tns:modulo" minOccurs="0"/>
+<xs:element name="tblProyectoProID" type="tns:proyecto" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="proyecto">
+<xs:sequence>
+<xs:element name="proAvance" type="xs:string" minOccurs="0"/>
+<xs:element name="proDescripcion" type="xs:string" minOccurs="0"/>
+<xs:element name="proID" type="xs:int" minOccurs="0"/>
+<xs:element name="proNombre" type="xs:string" minOccurs="0"/>
+<xs:element name="tblUsuarioidUsuario" type="tns:usuario" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="CrearModulo">
+<xs:sequence>
+<xs:element name="parameter" type="tns:modulo" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ModificarEscenario">
+<xs:sequence>
+<xs:element name="parameter" type="tns:escenario" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="escenario">
+<xs:sequence>
+<xs:element name="escAmbiente" type="xs:string" minOccurs="0"/>
+<xs:element name="escArtefacto" type="xs:string" minOccurs="0"/>
+<xs:element name="escEstado" type="xs:string" minOccurs="0"/>
+<xs:element name="escEstimulo" type="xs:string" minOccurs="0"/>
+<xs:element name="escFuente" type="xs:string" minOccurs="0"/>
+<xs:element name="escID" type="xs:int" minOccurs="0"/>
+<xs:element name="escMedidaRespuesta" type="xs:string" minOccurs="0"/>
+<xs:element name="escNombre" type="xs:string" minOccurs="0"/>
+<xs:element name="escPrioridad" type="xs:int" minOccurs="0"/>
+<xs:element name="escRespuesta" type="xs:string" minOccurs="0"/>
+<xs:element name="tblAtributoCalidadacID" type="tns:atributocalidad" minOccurs="0"/>
+<xs:element name="tblModuloModId" type="tns:modulo" minOccurs="0"/>
+<xs:element name="tblProyectoProID" type="tns:proyecto" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="atributocalidad">
+<xs:sequence>
+<xs:element name="acDescripcion" type="xs:string" minOccurs="0"/>
+<xs:element name="acID" type="xs:int" minOccurs="0"/>
+<xs:element name="acNombre" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ObtenerRationaleQAW">
+<xs:sequence>
+<xs:element name="idpro" type="xs:int"/>
+<xs:element name="paso" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ObtenerRationaleQAWResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:rationaleqaw" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="rationaleqaw">
+<xs:sequence>
+<xs:element name="ratQawArchivo" type="xs:string" minOccurs="0"/>
+<xs:element name="ratQawDescripcion" type="xs:string" minOccurs="0"/>
+<xs:element name="ratQawID" type="xs:int" minOccurs="0"/>
+<xs:element name="ratQawPaso" type="xs:string" minOccurs="0"/>
+<xs:element name="tblProyectoProID" type="tns:proyecto" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="GuardarRationaleAdd">
+<xs:sequence>
+<xs:element name="parameter" type="tns:rationaleadd" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="rationaleadd">
+<xs:sequence>
+<xs:element name="ratAddArchivo" type="xs:string" minOccurs="0"/>
+<xs:element name="ratAddDescripcion" type="xs:string" minOccurs="0"/>
+<xs:element name="ratAddID" type="xs:int" minOccurs="0"/>
+<xs:element name="ratAddPaso" type="xs:string" minOccurs="0"/>
+<xs:element name="tblProyectoProID" type="tns:proyecto" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ModificarTactica">
+<xs:sequence>
+<xs:element name="parameter" type="tns:tactica" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="tactica">
+<xs:sequence>
+<xs:element name="tacDescripcion" type="xs:string" minOccurs="0"/>
+<xs:element name="tacID" type="xs:int" minOccurs="0"/>
+<xs:element name="tacNombre" type="xs:string" minOccurs="0"/>
+<xs:element name="tblatributocalidadacID" type="tns:atributocalidad" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="hello">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="helloResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ListarTacticasPorPatron">
+<xs:sequence>
+<xs:element name="parameter" type="tns:patron" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ListarTacticasPorPatronResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:tactica" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ObtenerDriverArquitectonicos">
+<xs:sequence>
+<xs:element name="parameter" type="tns:proyecto" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ObtenerDriverArquitectonicosResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:escenario" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="BuscarUsuario">
+<xs:sequence>
+<xs:element name="parameter" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="BuscarUsuarioResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:usuario" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ListarAtributos">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="ListarAtributosResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:atributocalidad" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="adicionarProyectoUsuario">
+<xs:sequence>
+<xs:element name="proyecto" type="tns:proyecto" minOccurs="0"/>
+<xs:element name="usuario" type="tns:usuario" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="BuscarModuloEnDescomposicion">
+<xs:sequence>
+<xs:element name="idProy" type="tns:proyecto" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="BuscarModuloEnDescomposicionResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:modulo" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ListarTactica">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="ListarTacticaResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:tactica" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="CrearResponsabilidad">
+<xs:sequence>
+<xs:element name="parameter" type="tns:responsabilidad" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="responsabilidad">
+<xs:sequence>
+<xs:element name="respDescripcion" type="xs:string" minOccurs="0"/>
+<xs:element name="respID" type="xs:int" minOccurs="0"/>
+<xs:element name="respNombre" type="xs:string" minOccurs="0"/>
+<xs:element name="respOtro" type="xs:string" minOccurs="0"/>
+<xs:element name="tblmoduloModId" type="tns:modulo" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="EliminarAtributo">
+<xs:sequence>
+<xs:element name="parameter" type="tns:atributocalidad" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ModificarProyecto">
+<xs:sequence>
+<xs:element name="parameter" type="tns:proyecto" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ModificarModulo">
+<xs:sequence>
+<xs:element name="parameter" type="tns:modulo" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ListarModulos">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="ListarModulosResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:modulo" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ListarTacticaPorAtributoDeCalidad">
+<xs:sequence>
+<xs:element name="parameter" type="tns:atributocalidad" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ListarTacticaPorAtributoDeCalidadResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:tactica" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="BuscarTactica">
+<xs:sequence>
+<xs:element name="parameter" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="BuscarTacticaResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:tactica" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ModificarInterface">
+<xs:sequence>
+<xs:element name="parameter" type="tns:interface" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="CrearProyecto">
+<xs:sequence>
+<xs:element name="parameter" type="tns:proyecto" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="BuscarInterface">
+<xs:sequence>
+<xs:element name="parameter" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="BuscarInterfaceResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:interface" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ModificarUsuario">
+<xs:sequence>
+<xs:element name="parameter" type="tns:usuario" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ListarResponsabilidad">
+<xs:sequence>
+<xs:element name="parameter" type="tns:modulo" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ListarResponsabilidadResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:responsabilidad" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="EliminarInterface">
+<xs:sequence>
+<xs:element name="parameter" type="tns:interface" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="CrearPatron">
+<xs:sequence>
+<xs:element name="parameter" type="tns:patron" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ListarPatronPorTactica">
+<xs:sequence>
+<xs:element name="parameter" type="tns:tactica" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ListarPatronPorTacticaResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:patron" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ModificarPatron">
+<xs:sequence>
+<xs:element name="parameter" type="tns:patron" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ModificarAtributo">
+<xs:sequence>
+<xs:element name="parameter" type="tns:atributocalidad" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="GuardarRationaleQaw">
+<xs:sequence>
+<xs:element name="parameter" type="tns:rationaleqaw" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="BuscarEscenario">
+<xs:sequence>
+<xs:element name="parameter" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="BuscarEscenarioResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:escenario" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ObtenerRationaleAdd">
+<xs:sequence>
+<xs:element name="idpro" type="xs:int"/>
+<xs:element name="paso" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ObtenerRationaleAddResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:rationaleadd" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="CrearTactica">
+<xs:sequence>
+<xs:element name="parameter" type="tns:tactica" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="iniciarSesion">
+<xs:sequence>
+<xs:element name="usuario" type="xs:string" minOccurs="0"/>
+<xs:element name="password" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="iniciarSesionResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:usuario" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="CrearEscenario">
+<xs:sequence>
+<xs:element name="parameter" type="tns:escenario" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ListarEscenario">
+<xs:sequence>
+<xs:element name="parameter" type="tns:proyecto" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ListarEscenarioResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:escenario" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="EliminarResponsabilidad">
+<xs:sequence>
+<xs:element name="parameter" type="tns:responsabilidad" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="EliminarModulo">
+<xs:sequence>
+<xs:element name="parameter" type="tns:modulo" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="EliminarTactica">
+<xs:sequence>
+<xs:element name="parameter" type="tns:tactica" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ListarResponsabilidades">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="ListarResponsabilidadesResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:responsabilidad" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ListarInterfaces">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="ListarInterfacesResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:interface" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ListarModulo">
+<xs:sequence>
+<xs:element name="parameter" type="tns:proyecto" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ListarModuloResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:modulo" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="BuscarAtributo">
+<xs:sequence>
+<xs:element name="parameter" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="BuscarAtributoResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:atributocalidad" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="EliminarPatron">
+<xs:sequence>
+<xs:element name="parameter" type="tns:patron" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="CrearAtributo">
+<xs:sequence>
+<xs:element name="parameter" type="tns:atributocalidad" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ListarPatrones">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="ListarPatronesResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:patron" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="EliminarEscenario">
+<xs:sequence>
+<xs:element name="parameter" type="tns:escenario" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="EliminarProyecto">
+<xs:sequence>
+<xs:element name="proyecto" type="tns:proyecto" minOccurs="0"/>
+<xs:element name="usuario" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="EliminarProyectoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="CrearUsuarios">
+<xs:sequence>
+<xs:element name="parameter" type="tns:usuario" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="EliminarUsuario">
+<xs:sequence>
+<xs:element name="parameter" type="tns:usuario" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="BuscarProyecto">
+<xs:sequence>
+<xs:element name="parameter" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="BuscarProyectoResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:proyecto" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="BuscarModulo">
+<xs:sequence>
+<xs:element name="parameter" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="BuscarModuloResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:modulo" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ListarProyectos">
+<xs:sequence>
+<xs:element name="parameter" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ListarProyectosResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:proyecto" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ModificarResponsabilidad">
+<xs:sequence>
+<xs:element name="parameter" type="tns:responsabilidad" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
